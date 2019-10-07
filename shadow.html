@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        body{
+            height:200vh;
+        }
+        .p1{
+            font-size:35px;
+        }
+        .p2{
+            font-size=50px;
+            text-shadow:2px 2px red;
+        }
+        .p3{
+            font-size:50px;
+            text-shadow:2px 2px 5px blue;
+        }
+        .p4{
+            font-size:50px;
+            color:white;
+            font-family:sans-serif;
+            text-shadow:2px 0px 10px blue;
+
+        }
+        .p5{
+            font-size:50px;
+            color:pink;
+            font-family:sans-serif;
+            text-shadow:2px 0px 10px blue,2px 0px 5px blue,2px 0px 20px red;
+
+        }
+        .container{
+            border:1px solid black;
+            display:inline-block;
+            padding:20px;
+            height:300px;
+            line-height:200px;
+            font-family: sans-serif;
+            box-shadow: 0px 0px 20px/*this is for blur*/ 10px black;
+            /*we will get shadow on both the sides when we have first two pixels as zero */
+            /*This is ued in card layout*/
+        }
+        .card1:hover{
+         box-shadow: 0 4ps 8px 0;
+        transition: 2s;
+        width:40%;
+        border-radius: 5px;
+        float:left;
+        margin:20px;
+
+        }
+        .card2{
+            transform:rotateX(360deg);
+        }
+
+    </style>
+</head>
+
+<body>
+    <p class="p1">This is a paragraph-1</p>
+    <p class="p2">This is a paragraph-2</p>
+    <p class="p3">This is a paragraph-3</p>
+    <p class="p4">This is a paragraph-4</p>
+    <p class="p5">This is a paragraph-5</p>
+    <div class="container">
+        <p>This a example of box</p>
+    </div>
+    <div class="card1">
+        <img src="Googlelogo.jpg" alt="avtar" width="100%">
+
+        <div class="container">
+            <p style="font-family: sans-serif">This is India's flag</p>
+        </div>
+
+
+
+
+    </div>
+</body>
+</html>
